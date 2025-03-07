@@ -1,23 +1,15 @@
-.page {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #2A2C2F;
-    color: white;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
 .header {
-    max-width: 300px;
+    max-width: 90%;
     margin: auto;
+    padding: 5% 0 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header__logo {
     width: 40%;
-    margin: auto;
+    margin: 0;
 }
 
 .header__links {
@@ -28,7 +20,7 @@
 .header__lang-link {
     text-decoration: none;
     color: white;
-    margin: auto;
+    margin: auto 10%;
 }
 
 .header__lang-link:hover {
@@ -37,7 +29,7 @@
 }
 
 .lead {
-    max-width: 320px;
+    max-width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -45,32 +37,69 @@
 }
 
 .lead__title {
-    max-width: 290px;
-    margin: 40px auto 0;
+    width: 100%;
+    margin: 0;
+    padding: 10% 0 0;
     line-height: 44px;
     font-size: 40px;
     font-weight: bold;
 }
 
 .lead__subtitle {
-    max-width: 290px;
-    margin: 15px auto 0;
+    width: 100%;
+    margin: 0;
+    padding: 7% 0;
     line-height: 20px;
     font-size: 16px;
     font-weight: 310;
 }
 
 .lead__image {
-    max-width: 310px;
-    margin: 40px auto 0;
+    width: 100%;
+    margin: 0;
 }
 
 .lead__caption {
-    max-width: 310px;
-    margin: 10px auto 0 10px;
+    max-width: 100%;
+    margin: 0;
     text-align: start;
     line-height: 14px;
     font-size: 10px;
     font-weight: lighter;
     letter-spacing: 0.15cap;
+}
+
+.intro {
+    width: 90%;
+    margin: auto;
+}
+
+.intro__title {
+    margin: 0;
+    padding: 15% 0 10%;
+    line-height: 35px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.intro__text {
+    margin: 0;
+    padding: 0;
+    line-height: 163%;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.intro__list {
+    margin: 10% auto 20%;
+    padding: 0;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    display: inline;
+}
+
+.photo-grid {
+    display: grid;
 }

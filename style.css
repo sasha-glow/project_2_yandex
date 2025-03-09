@@ -1,26 +1,28 @@
 .header {
-    max-width: 90%;
-    margin: auto;
-    padding: 5% 0 0;
+    max-width: 100%;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .header__logo {
-    width: 40%;
-    margin: 0;
+    max-width: 45%;
+    margin: 5% 0;
+    padding: 0 2%;
 }
 
 .header__links {
+    max-width: 20%;
     margin: 0;
-    display: flex;
+    padding: 0 2%;
 }
 
 .header__lang-link {
     text-decoration: none;
     color: white;
-    margin: auto 10%;
+    margin: auto;
 }
 
 .header__lang-link:hover {
@@ -31,37 +33,36 @@
 .lead {
     max-width: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
 .lead__title {
-    width: 100%;
-    margin: 0;
-    padding: 10% 0 0;
+    max-width: 100%;
+    margin: 7% 0 0;
     line-height: 44px;
     font-size: 40px;
+    -webkit-text-stroke: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
 .lead__subtitle {
-    width: 100%;
-    margin: 0;
-    padding: 7% 0;
+    max-width: 100%;
+    margin: 5% auto 10%;
     line-height: 20px;
     font-size: 16px;
     font-weight: 310;
 }
 
 .lead__image {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
 .lead__caption {
     max-width: 100%;
     margin: 0;
+    padding: 0 2%;
     text-align: start;
     line-height: 14px;
     font-size: 10px;
@@ -70,74 +71,81 @@
 }
 
 .intro {
-    width: 90%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 .intro__title {
-    margin: 0;
-    padding: 15% 0 10%;
+    margin: 15% auto;
+    padding: 0 2%;
     line-height: 35px;
     font-size: 32px;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
 .intro__text {
     margin: 0;
-    padding: 0;
+    padding: 0 2%;
     line-height: 163%;
     font-size: 16px;
     font-weight: normal;
 }
 
 .intro__list {
-    margin: 10% auto 20%;
-    padding: 0;
+    margin: 10% 0;
+    padding: 0 2%;
     line-height: 18px;
     font-size: 12px;
     font-weight: bold;
     list-style-type: none;
-    display: inline;
+
 }
 
 .photo-grid {
-    width: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(11, 1fr);
-    gap: 10px;
-    margin: 10% auto 15%;
+    gap: 1rem;
+    margin: 10% auto;
 }
 
 .photo-grid__item {
-    width: 100%;
+    max-width: 100%;
     margin:0 auto;
 }
 
 .places {
     max-width: 100%;
+    margin: 0;
 }
 
 .place {
-    width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 .place__title{
-    width: 90%;
+    max-width: 100%;
     margin: 10% auto;
+    padding: 0 2%;
     line-height: 35px;
     font-size: 32px;
+    -webkit-text-stroke: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 
 .place__image {
-    width: 100%;
+    max-width: 100%;
 }
 
 .place__website {
+    max-width: 100%;
     margin: 0 auto 10%;
-    width: 90%;
+    padding: 0 2%;
 }
 
 .place__website-heading {
@@ -159,38 +167,49 @@
 }
 
 .place__paragraph {
-    width: 90%;
+    max-width: 100%;
+    padding: 0 2%;
     margin: 7% auto;
     line-height: 163%;
     font-size: 16px;
 }
 
 .cover {
-    width: 100%;
+    max-width: 100%;
+    margin: 0;
 }
 
 .cover__container-link {
+    max-width: 100%;
     display: block;
-    width: 100%;
-    height: 100%;
     text-decoration: none;
     color: white;
     background-image: url(./images/cover-trains.jpg);
     background-size: cover;
+    filter: brightness(90%);
+
+}
+
+.cover__container-link:hover {
+    filter: brightness(70%);
 }
 
 .cover__title{
-    width: 90%;
+    max-width: 100%;
     margin: 10% auto;
-    line-height: 44px;
-    font-size: 40px;
+    padding: 10% 5% 0;
+    line-height: 40x;
+    font-size: 36px;
+    -webkit-text-stroke: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
     text-align: center;
-}
+}    
 
 .cover__subtitle {
-    width: 90%;
-    margin: 10% auto 10%;
+    max-width: 100%;
+    margin: 10% auto;
+    padding: 5% 5% 10%;
     line-height: 16px;
     font-size: 15px;
     font-weight: normal;
@@ -198,7 +217,7 @@
 }
 
 .footer {
-    width: 90%;
+    max-width: 100%;
     margin: 10% auto;
     display: flex;
     flex-direction: column;
@@ -206,20 +225,22 @@
 }
 
 .footer__link {
+    margin: 5% 0;
+    padding: 0 2%;
     text-decoration: none;
     color: white;
-    margin: 5% 0;
     line-height: 24px;
     font-size: 24px;
 }
 
 .footer__link:hover {
-    text-decoration: underline;
     opacity: 0.7;
 }
 
 .footer__copyright {
-    margin: 15% 0 5%;
+    margin: 15% 0 10%;
+    padding: 0 2%;
+    text-align: center;
     line-height: 14px;
     font-size: 14px;
 }
